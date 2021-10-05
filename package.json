@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/ssamurai97/simple_node/issues"
   },
-  "homepage": "https://github.com/ssamurai97/simple_node#readme"
+  "homepage": "https://github.com/ssamurai97/simple_node#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
