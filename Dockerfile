@@ -1,5 +1,5 @@
 # Use NodeJS base image
-FROM node:13
+FROM node:14
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -15,7 +15,7 @@ RUN npm install
 COPY . .
 
 # Bind the port that the image will run on
-EXPOSE 8080
+EXPOSE 7777
 
 # Define the Docker image's behavior at runtime
 CMD ["node", "server.js"]

@@ -1,16 +1,11 @@
-function wait(ms=0){
-	return new Promise(resolve => setTimeout(resolve, ms));
-}
+const express = require("express");
+const app = express();
+const PORT = 7777
+app.listen(PORT, () => {
+  console.log("Server running on port 8080");
+});
 
+app.get("/health", (req, res, next) => {
+  res.status(200).send("Hello!");
+});
 
-
-async function run(){
-  while(1){
-    console.log(`Containers Rule!`);
-
-	  await wait(5000);
-  }
-}
-
-
-run();
